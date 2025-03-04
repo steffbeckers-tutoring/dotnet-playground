@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground.WebAPI", "Playgr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground.WorkerService", "Playground.WorkerService\Playground.WorkerService.csproj", "{16914162-C986-4CEC-A511-02FBEC883B6A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground.WebAPI.Docker", "Playground.WebAPI.Docker\Playground.WebAPI.Docker.csproj", "{107CC407-9209-493C-B493-ACD8CDE5CCA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{16914162-C986-4CEC-A511-02FBEC883B6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16914162-C986-4CEC-A511-02FBEC883B6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16914162-C986-4CEC-A511-02FBEC883B6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{107CC407-9209-493C-B493-ACD8CDE5CCA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{107CC407-9209-493C-B493-ACD8CDE5CCA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{107CC407-9209-493C-B493-ACD8CDE5CCA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{107CC407-9209-493C-B493-ACD8CDE5CCA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
