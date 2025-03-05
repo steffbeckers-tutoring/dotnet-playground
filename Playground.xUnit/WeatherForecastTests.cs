@@ -4,23 +4,22 @@ namespace Playground.xUnit;
 
 public class WeatherForecastTests
 {
+    private WeatherForecast _weatherForecast;
+
+    public WeatherForecastTests()
+    {
+        _weatherForecast = new WeatherForecast();
+    }
+
     [Fact]
     public void Should_Create_New_WeatherForecast()
     {
-        // Act
-        WeatherForecast weatherForecast = new WeatherForecast();
-
-        // Assert
-        Assert.NotNull(weatherForecast);
+        Assert.NotNull(_weatherForecast);
     }
 
     [Fact]
     public void Should_Create_New_WeatherForecast_Shouldly()
     {
-        // Act
-        WeatherForecast weatherForecast = new WeatherForecast();
-
-        // Assert
-        weatherForecast.ShouldNotBe(null);
+        _weatherForecast.ShouldNotBe(null);
     }
 }
