@@ -6,6 +6,11 @@ public class PlaygroundDbContext : DbContext
 {
     public DbSet<WeatherForecast> WeatherForecasts { get; set; }
 
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) =>
+        optionsBuilder.UseSqlite(
+            $"Data Source={Path.Combine(Directory.GetCurrentDirectory(), "Playground.db")}",
+            options => options.MigrationsAssembly(typeof(PlaygroundDbContext).Assembly));
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<WeatherForecast>(b =>
