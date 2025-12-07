@@ -1,7 +1,38 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿//using TM.ProgrammingAdvanced;
+
+// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 
 // Recursion
+//string path = Data.Folders(@"D:\tmp\");
+//Console.WriteLine(path);
+
+string? FindFileInFolder(string path)
+{
+    var elements = Directory.GetFileSystemEntries(path);
+
+    foreach (string element in elements)
+    {
+        if (Directory.Exists(element))
+        {
+            string? result = FindFileInFolder(element);
+
+            if (result != null)
+            {
+                return result;
+            }
+        }
+        else
+        {
+            return element;
+        }
+    }
+
+    return null;
+}
+
+//Console.WriteLine("File found at: " + FindFileInFolder(path));
+Console.WriteLine("File found at: " + FindFileInFolder(@"D:\tmp\jbcre4tvub1"));
 
 // Fibonacci
 uint Fibonacci(uint number)
