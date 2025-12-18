@@ -4,7 +4,7 @@ namespace Playground.xUnit;
 
 public class WeatherForecastTests
 {
-    private WeatherForecast _weatherForecast;
+    private readonly WeatherForecast _weatherForecast;
 
     public WeatherForecastTests()
     {
